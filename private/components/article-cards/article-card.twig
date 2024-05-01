@@ -1,0 +1,15 @@
+<div class='article-card__item {{ class }}'>
+  <div class='article-card__item-img'>
+    <img src='{% if src is defined %}{{ src }}{% endif %}' alt='{% if alt is defined %}{{ alt }}{% endif %}'>
+    <div class='article-card__item-img-label'>{% if label is defined %}{{ label }}{% endif %}</div>
+  </div>
+  <div class='article-card__item-wrap'>
+    <h3 class='article-card__item-subheader'>
+      {% if subheader is defined %}{{ subheader }}{% endif %}
+    </h3>
+    {% include "../../components/arrow/arrow.twig" with {
+      'class': 'article-card__arrow'
+    } %}
+  </div>
+  <div class='article-card__item-date'>{% if date is defined %}{{ date }}{% endif %}</div>
+</div>

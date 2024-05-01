@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yolo</title>
+<link rel="shortcut icon" href="favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png"><script defer src="./js/index.js"></script><link href="./css/index.css" rel="stylesheet"></head>
+<body>
+    <header class='header'>
+  <nav>
+    <div class="container">
+      <div class='row'>
+        <div class="col-9 d-flex">
+          <ul class='header__nav'>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Как работает Yolo</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Контакты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 d-flex justify-content-end align-items-center">
+          <div class="region">
+  <div class="region__wrapper">
+    <select name="city">
+      <option value="tbilisi" selected>Тбилиси</option>
+      <option value="kyiv">Киев</option>
+    </select>
+  </div>
+  <div class="region__wrapper">
+    <select name="language">
+      <option value="ka">KA</option>
+      <option value="ua">UA</option>
+      <option value="ru" selected>RU</option>
+    </select>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class='header__menu'>
+      <div class='row justify-content-between'>
+        <div class='col-auto d-flex align-items-center'>
+          <div class='hamburger'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href='#' class='header__logo'>
+            <img src='./assets/logo.svg' alt='logo'>
+          </a>
+        </div>
+        <div class='col-auto d-none d-md-flex align-items-center justify-content-around justify-content-xl-between  w-75'>
+          <div class="header__btn-wrap">
+            <a class="btn orange" href="#">
+  Впечатления</a>
+            <a class="btn green" href="#">
+  Афиша</a>
+          </div>
+          <form class="header__search" action="/search" method="get">
+            <input type="search" name="query" placeholder="Поиск...">
+            <div class="header__search-btns">
+              <button class="header__search-btn mic"></button>
+              <div class="divider"></div>
+              <button class="header__search-btn search" type="submit"></button>
+            </div>
+          </form>
+          <a class="btn orange-outline" href="#">
+  Активировать сертификат</a>
+          <a class="btn orange-outline sm" href="#">
+  Cертификат</a>
+
+        </div>
+        <div class="col-auto d-flex align-items-center">
+          <div class="icons">
+            <div class="icons__lang">RU</div>
+            <a class="icons__item d-none d-lg-block">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#pc"></use>
+              </svg>
+            </a>
+            <a class="icons__item d-none d-lg-block">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#favorites"></use>
+              </svg>
+            </a>
+            <a class="icons__item">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class='slide-menu'>
+      <a class="slide-menu__card slide-menu__card_orange" href="">
+        <span class="slide-menu__header">Впечатления</span>
+        <span class="slide-menu__subheader">Весь каталог</span>
+      </a>
+      <a class="slide-menu__card slide-menu__card_green" href="">
+        <span class="slide-menu__header">Афиша</span>
+        <span class="slide-menu__subheader">Все события</span>
+      </a>
+      <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide swiper__item swiper__item_bl bg ">
+      <span class="content">Соберите до 5-ти впечатлений в одном подарке!</span>
+    </div>
+    <div class="swiper-slide swiper__item swiper__item_pn">
+      <span class="content">Ваш получатель сам выберет какое из впечатления использовать.</span>
+    </div>
+    <div class="swiper-slide swiper__item swiper__item_yl">
+      <span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+    <!-- Добавляйте слайды по необходимости -->
+  </div>
+  <!-- Опционально: пагинация -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev d-none d-sm-flex"></div>
+  <div class="swiper-button-next d-none d-sm-flex"></div>
+</div>
+    </div>
+  </div>
+</header>
+</body>
+</html>

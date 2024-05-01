@@ -1,0 +1,55 @@
+<section class='read-more'>
+  <div class='container'>
+    <div class='row justify-content-center'>
+      <div class='col-12'>
+        <h2 class='read-more__title'>Еще почитать</h2>
+      </div>
+      <div class='col-12'>
+        <div class='read-more__wrapper'>
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/cataract.jpg',
+            'alt': 'cataract',
+            'label': 'Статьи',
+            'subheader': '5 способов профилактики катаракты',
+            'date': '23 февраля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/report.jpg',
+            'alt': 'report',
+            'label': 'Советы',
+            'subheader': 'Всемирный доклад о проблемах здоровья',
+            'date': '8 июля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/glaucoma.jpg',
+            'alt': 'glaucoma',
+            'label': 'Блог',
+            'subheader': 'Лечение глаукомы народными средствами',
+            'date': '8 июля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'class': 'd-flex d-lg-none',
+            'src': './assets/glaucoma.jpg',
+            'alt': 'glaucoma',
+            'label': 'Блог',
+            'subheader': 'Лечение глаукомы народными средствами',
+            'date': '8 июля'
+          } %}
+        </div>
+      </div>
+      <div class='col-12'>
+        <div class='read-more__btns'>
+          <a href='#' class='read-more__btns-articles'>
+            Больше похожих статей
+          </a>
+          <div class='read-more__btns-pageup'>
+            <a href='#up' class="read-more__btns-text">Наверх</a>
+            {% include "../../components/arrow/arrow.twig" with {
+              'class': 'article-card__arrow article-card__arrow_top'
+            } %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

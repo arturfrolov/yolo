@@ -1,0 +1,34 @@
+// Colors
+:root {
+  --white-text: #FFF;
+  --black-text: #202020;
+  --green: #166e5a;
+  --yellow: #fedd61;
+  --yellow-background: #f4ece0;
+  --pink: #D62D93;
+}
+
+$theme-colors: (
+  "primary": #fd5137,
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
+        xxxl: 1920px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 750px,
+        lg: 960px,
+        xl: 1115px,
+        xxl: 1320px,
+        xxxl: 1884px
+);
+
+$link-decoration: none;

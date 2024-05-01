@@ -1,0 +1,110 @@
+<header class='header'>
+  <nav>
+    <div class="container">
+      <div class='row'>
+        <div class="col-9 d-flex">
+          <ul class='header__nav'>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Как работает Yolo</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>Контакты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href='#' class='header__nav-link'>О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 d-flex justify-content-end align-items-center">
+          {% include "../../components/region/region.twig" %}
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class='header__menu'>
+      <div class='row justify-content-between'>
+        <div class='col-auto d-flex align-items-center'>
+          <div class='hamburger'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href='#' class='header__logo'>
+            <img src='./assets/logo.svg' alt='logo'>
+          </a>
+        </div>
+        <div class='col-auto d-none d-md-flex align-items-center justify-content-around justify-content-xl-between  w-75'>
+          <div class="header__btn-wrap">
+            {% include "../../components/button/button.twig" with {
+              'class': 'orange',
+              'label': 'Впечатления',
+            } %}
+            {% include "../../components/button/button.twig" with {
+              'class': 'green',
+              'label': 'Афиша',
+            } %}
+          </div>
+          <form class="header__search" action="/search" method="get">
+            <input type="search" name="query" placeholder="Поиск...">
+            <div class="header__search-btns">
+              <button class="header__search-btn mic"></button>
+              <div class="divider"></div>
+              <button class="header__search-btn search" type="submit"></button>
+            </div>
+          </form>
+          {% include "../../components/button/button.twig" with {
+            'class': 'orange-outline',
+            'label': 'Активировать сертификат',
+          } %}
+          {% include "../../components/button/button.twig" with {
+            'class': 'orange-outline sm',
+            'label': 'Cертификат',
+          } %}
+
+        </div>
+        <div class="col-auto d-flex align-items-center">
+          <div class="icons">
+            <div class="icons__lang">RU</div>
+            <a class="icons__item d-none d-lg-block">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#pc"></use>
+              </svg>
+            </a>
+            <a class="icons__item d-none d-lg-block">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#favorites"></use>
+              </svg>
+            </a>
+            <a class="icons__item">
+              <svg class="icons__img">
+                <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class='slide-menu'>
+      <a class="slide-menu__card slide-menu__card_orange" href="">
+        <span class="slide-menu__header">Впечатления</span>
+        <span class="slide-menu__subheader">Весь каталог</span>
+      </a>
+      <a class="slide-menu__card slide-menu__card_green" href="">
+        <span class="slide-menu__header">Афиша</span>
+        <span class="slide-menu__subheader">Все события</span>
+      </a>
+      {% include "../../components/slider/slider.twig" with {
+        'class': 'bg',
+        'src': './assets/cataract.jpg',
+        'alt': 'cataract',
+        'label': 'Статьи',
+        'subheader': '5 способов профилактики катаракты',
+        'date': '23 февраля'
+      } %}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,82 @@
+.btn {
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 130%;
+  padding: 13px 13px;
+  border: 1px solid var(--white-text);
+  border-radius: 48px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+  background: rgb(255, 255, 255);
+  text-transform: uppercase;
+  @include media-breakpoint-up(lg) {
+    padding: 15px 20px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 18px 26px;
+    font-size: 14px;
+  }
+  @include media-breakpoint-up(xxxl) {
+    padding: 18px 38px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.10s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+  }
+  &.orange {
+    color: map-get($theme-colors, primary);
+    &:hover {
+      background-color: map-get($theme-colors, primary);
+      box-shadow: none;
+      color: var(--white-text);
+      &::after {
+        background-color: map-get($theme-colors, primary);
+        bottom: -7px;
+        opacity: 1;
+      }
+    }
+  }
+  &.orange-outline {
+    display: none;
+    border: 1px solid map-get($theme-colors, primary);
+    color: map-get($theme-colors, primary);
+    @include media-breakpoint-up(xxl) {
+      display: block;
+    }
+    &:hover {
+      color: var(--white-text);
+      background: map-get($theme-colors, primary);
+    }
+    &.sm {
+      display: none;
+      @include media-breakpoint-up(xl) {
+       display: block;
+      }
+      @include media-breakpoint-up(xxl) {
+        display: none;
+      }
+    }
+  }
+  &.green {
+    color: var(--green);
+    &:hover {
+      background-color: var(--green);
+      box-shadow: none;
+      color: var(--white-text);
+      &::after {
+        background-color: var(--green);
+        bottom: -7px;
+        opacity: 1;
+      }
+    }
+  }
+
+}

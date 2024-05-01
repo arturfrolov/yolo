@@ -1,0 +1,22 @@
+@import "~normalize.css";
+@import "variables";
+
+//Reset and base style
+* {
+  font-family: Gotham Pro, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.region {
+  display: flex;
+  justify-content: flex-end;
+  .region__wrapper {
+    &:last-child {
+      margin-left: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      &:last-child {
+        margin-left: 59px;
+      }
+    }
+    select {
+      width: 100%;
+      color: var(--black-text);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 13px;
+      border: none;
+      background-color: inherit;
+    }
+  }
+
+}
