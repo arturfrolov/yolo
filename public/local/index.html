@@ -48,7 +48,7 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container " style="overflow: hidden">
     <div class='header__menu'>
       <div class='row justify-content-between'>
         <div class='col-auto d-flex align-items-center'>
@@ -115,24 +115,77 @@
       </a>
       <div class="swiper mySwiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide swiper__item swiper__item_bl bg ">
-      <span class="content">Соберите до 5-ти впечатлений в одном подарке!</span>
+    <div class="swiper-slide slide-menu__card slide-menu__card_blue">
+      <span>Соберите до 5-ти впечатлений в одном подарке!</span>
     </div>
-    <div class="swiper-slide swiper__item swiper__item_pn">
-      <span class="content">Ваш получатель сам выберет какое из впечатления использовать.</span>
+    <div class="swiper-slide slide-menu__card slide-menu__card_pink">
+      <span>Ваш получатель сам выберет какое из впечатления использовать.</span>
     </div>
-    <div class="swiper-slide swiper__item swiper__item_yl">
-      <span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    <div class="swiper-slide slide-menu__card slide-menu__card_yellow">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
     </div>
     <!-- Добавляйте слайды по необходимости -->
   </div>
   <!-- Опционально: пагинация -->
-  <div class="swiper-pagination"></div>
+  <div class="swiper-pagination slide-menu__pagination"></div>
   <div class="swiper-button-prev d-none d-sm-flex"></div>
   <div class="swiper-button-next d-none d-sm-flex"></div>
 </div>
     </div>
   </div>
 </header>
+    <section class='impressions'>
+  <div class='container'>
+    <h1 class="title impressions__title">Наши впечатления</h1>
+    <div class='product-card '>
+  <div class='product-card__img'>
+    <img src='./assets/dance.png' alt='dance'>
+    <div class='product-card__img-label valentine'>День святого валентина</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Активити    </h6>
+    <h3 class='product-card__header'>
+      Грузинские танцы индивидуальный класс    </h3>
+    <p class='product-card__descr'>
+      Удивите всех Вашим умением танцевать грузинские танцы и красотой движений, удивите всех...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select id="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
 </body>
 </html>

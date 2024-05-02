@@ -13,7 +13,7 @@ module.exports = merge(common, {
       directory: path.join(__dirname, `../${process.env.FOLDER_PUBLIC_BASE}`),
     },
     compress: true,
-    port: 9003,
+    port: 3001,
     open: true,
   },
   module: {

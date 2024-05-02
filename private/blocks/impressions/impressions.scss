@@ -1,24 +1,8 @@
-.impairment {
-  background-color: map-get($theme-colors, primary);
-  padding-top: 65px;
-  @include media-breakpoint-down(sm) {
-    padding-top: 38px;
-  }
-  @include media-breakpoint-between(sm, lg) {
-    padding-top: 38px;
-  }
-  @include media-breakpoint-between(lg, xl) {
-    padding-top: 42px;
-  }
-  &__listnum {
-    @include media-breakpoint-up(lg) {
-      a {
-        text-decoration: underline;
-      }
-    }
-  }
-  &__list_blue {
-    color: #0833C5;
-    font-weight: 500;
+.impressions {
+  padding-top: 30px;
+  &__title {
+    font-size: 28px;
+    margin-bottom: 0;
+    padding-bottom: 24px;
   }
 }

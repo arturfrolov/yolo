@@ -1,0 +1,50 @@
+<div class='product-card {{ class }}'>
+  <div class='product-card__img'>
+    <img src='{% if src is defined %}{{ src }}{% endif %}' alt='{% if alt is defined %}{{ alt }}{% endif %}'>
+    <div class='product-card__img-label {{ stickerClass }}'>{% if label is defined %}{{ label }}{% endif %}</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      {% if subheader is defined %}{{ subheader }}{% endif %}
+    </h6>
+    <h3 class='product-card__header'>
+      {% if header is defined %}{{ header }}{% endif %}
+    </h3>
+    <p class='product-card__descr'>
+      {% if descr is defined %}{{ descr }}{% endif %}
+    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    {% include "../../components/product-select/product-select.twig"%}
+    <div class="product-card__wrapper-btn">
+      {% include "../../components/button/button.twig" with {
+        'class': 'gift',
+        'label': 'Мультиподарок',
+      } %}
+      {% include "../../components/button/button.twig" with {
+        'class': 'buy',
+        'label': 'Купить',
+      } %}
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+</div>
