@@ -1,5 +1,5 @@
 /.cache-loader
 /node_modules
-/public
+/public/
 /config
 /private/_helpers/js/dropdownPosition
