@@ -1,186 +1,102 @@
-.access {
-  background-color: map-get($theme-colors, primary);
-  padding-top: 65px;
-  @include media-breakpoint-down(sm) {
-    padding-top: 40px;
+.reviews {
+  padding-top: 30px;
+  @include media-breakpoint-up(xxxl) {
+    padding-top: 80px;
   }
-  @include media-breakpoint-between(sm, lg) {
-    padding-top: 50px;
-  }
-  .access__subheader {
-    @include media-breakpoint-down(sm) {
-      margin-top: 25px;
-    }
-    @include media-breakpoint-up(sm) {
-      margin-top: 32px;
-    }
-    @include media-breakpoint-up(md) {
-      margin-top: 45px;
-    }
-  }
-  &__help {
+  &__head-wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 39px 0 12px 0;
-    background-color: map-get($theme-colors, secondary);
-    border-top: solid 3px #0833C5;
-    @include media-breakpoint-down(sm) {
-      margin-top: 28px;
-    }
-    @include media-breakpoint-up(sm) {
-      margin-top: 28px;
-    }
-    @include media-breakpoint-down(md) {
-      margin-top: 34px;
-      grid-template-columns: repeat(2, 142px);
-      justify-content: space-around;
-      row-gap: 50px;
-    }
-    @include media-breakpoint-up(md) {
-      margin-top: 34px;
-      row-gap: 20px;
-    }
-    &-item {
-      flex-basis: calc(100% / 4);
-      @include media-breakpoint-down(md) {
-        flex-basis: calc((100% / 2) - 3rem);
-      }
-    }
-    &-logo {
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-    }
-    &-text {
-      text-align: center;
-      margin-top: 10px;
-      @include media-breakpoint-down(sm) {
-        font-size: 11px;
-      }
-      @include media-breakpoint-up(sm) {
-        font-size: 13px;
-      }
-    }
-    &-prevention {
-      width: 69px;
-      height: 67px;
-      @include media-breakpoint-down(sm) {
-        width: 56px;
-        height: 53px;
-      }
-    }
-    &-diagnosis {
-      width: 61px;
-      height: 61px;
-      @include media-breakpoint-down(sm) {
-        width: 47px;
-        height: 47px;
-      }
-    }
-    &-curing {
-      width: 72px;
-      height: 50px;
-      @include media-breakpoint-down(sm) {
-        width: 58px;
-        height: 36px;
-      }
-    }
-    &-rehabilitation {
-      width: 64px;
-      height: 43px;
-      @include media-breakpoint-down(sm) {
-        width: 50px;
-        height: 30px;
-      }
+    align-items: center;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(xxxl) {
+      margin-bottom: 50px;
     }
   }
-  .access__text {
-    margin-top: 26px;
-    @include media-breakpoint-down(sm) {
-      margin-top: 22px;
-      font-size: 15px;
+  &__header {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-text);
+    padding: 0 20px 0 0;
+    margin: 0;
+    @include media-breakpoint-up(lg) {
+      font-size: 35px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      font-size: 50px;
     }
   }
-  .access__quote {
-    position: relative;
-    margin-top: 60px;
-    @include media-breakpoint-down(lg) {
-      margin-top: 50px;
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: calc(100% + 25px);
-      top: -19px;
-      background-color: var(--blue-text);
-      @include media-breakpoint-down(md) {
-        top: -10px;
-        height: calc(100% + 14px);
-      }
-      @include media-breakpoint-down(lg) {
-        left: 0;
-      }
-      @include media-breakpoint-up(lg) {
-        left: -26px;
-      }
-    }
-    &-mark {
-      padding-left: 0;
-      @include media-breakpoint-down(sm) {
-        padding-left: 12px;
-      }
-      @include media-breakpoint-between(sm, lg) {
-        padding-left: 26px;
-      }
-    }
-    &-img {
-      width: 47px;
-      height: 38px;
-    }
-    &-text {
-      font-size: 25px;
-      padding-left: 0;
-      @include media-breakpoint-down(sm) {
-        font-size: 22px;
-        line-height: 120%;
-        padding-left: 12px;
-      }
-      @include media-breakpoint-between(sm, lg) {
-        padding-left: 26px;
-      }
-    }
-    &-author {
-      color: rgba(0, 31, 47, 0.50);
-      margin-top: 22px;
-      padding-left: 0;
-      @include media-breakpoint-down(sm) {
-        margin-top: 12px;
-        padding-left: 12px;
-      }
-      @include media-breakpoint-between(sm, lg) {
-        padding-left: 26px;
-      }
-    }
-    &-name {
+  &__item {
+    display: flex;
+    height: 290px;
+    flex-direction: column;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    &-header {
       font-size: 18px;
       font-weight: 500;
-      @include media-breakpoint-down(sm) {
+      color: var(--black-text);
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(xxxl) {
+        font-size: 26px;
+      }
+    }
+    &-rating {
+      display: flex;
+      align-items: flex-end;
+
+    }
+    &-name {
+      padding-right: 8px;
+      color: rgb(112, 112, 112);
+      font-size: 14px;
+    }
+    &-stars {
+      &-icon {
+        width: 70px;
+        height: 14px;
+      }
+    }
+    &-descr {
+      color: rgb(32, 32, 32);
+      font-size: 14px;
+      font-weight: 400;
+      overflow: hidden;
+      height: 7.2em;
+      @include media-breakpoint-up(xxxl) {
         font-size: 16px;
       }
     }
-    &-job {
-      font-size: 14px;
-    }
   }
-  .access__offer-descr {
-    margin-top: 30px;
-    @include media-breakpoint-down(sm) {
-      margin-top: 40px;
-      line-height: 21px;
+  .swiper {
+    width: 160%;
+    overflow: visible;
+    margin-bottom: 2px;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+    .slide-menu__reviews {
+      width: 295px;
+      @include media-breakpoint-up(sm) {
+        width: 315px;
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      opacity: 1;
+      top: -43px;
+      @include media-breakpoint-up(xxl) {
+        top: -43px;
+      }
+      @include media-breakpoint-up(xxxl) {
+        top: -79px;
+      }
+    }
+    .swiper-button-prev {
+      left: inherit;
+      right: 52px;
     }
   }
 }

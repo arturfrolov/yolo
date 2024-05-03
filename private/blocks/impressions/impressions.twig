@@ -1,15 +1,198 @@
 <section class='impressions'>
-  <div class='container'>
-    <h1 class="title impressions__title">Наши впечатления</h1>
-    {% include "../../components/product-card/product-card.twig" with {
-      'src': './assets/dance.png',
-      'alt': 'dance',
-      'label': 'День святого валентина',
-      'stickerClass': 'valentine',
-      'header': 'Грузинские танцы индивидуальный класс',
-      'subheader': 'Активити',
-      'descr': 'Удивите всех Вашим умением танцевать грузинские танцы и красотой движений, удивите всех...',
-      'srclike': './assets/cataract.jpg',
+  <div class='container' style="overflow: hidden">
+    <div class="impressions__head-wrap">
+      <h1 class="title impressions__title">Наши впечатления</h1>
+      {% include "../../components/arrow/arrow.twig" %}
+    </div>
+    <div class="swiper mySwiper-impressions1 mb-4 d-lg-none">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/dance.png',
+            'alt': 'dance',
+            'label': 'День святого валентина',
+            'stickerClass': 'valentine',
+            'header': 'Грузинские танцы индивидуальный класс',
+            'subheader': 'Активити',
+            'descr': 'Удивите всех Вашим умением танцевать грузинские танцы и красотой движений, удивите всех...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/spa.png',
+            'alt': 'spa',
+            'label': 'Популярное',
+            'stickerClass': 'popular',
+            'header': 'Массаж для двоих и СПА в серных банях',
+            'subheader': 'Красота и уход',
+            'descr': 'Потрясающее расслабляющее впечатление для Пары!',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/tea.png',
+            'alt': 'tea',
+            'label': 'Новинка',
+            'stickerClass': 'new',
+            'header': 'Чайная церемония',
+            'subheader': 'Гастрономия',
+            'descr': 'Одним из самых изящных искусств является чайная церемония - ритуал совокупность процедур, которые помогают чаю...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/instruments.png',
+            'alt': 'instruments',
+            'header': 'Ударные инструменты и драмтерапия',
+            'subheader': 'Творчество',
+            'descr': '3 часа индивидуальных занятий: вместе с преподавателем вы определите ваш музыкальный уровень, сильные стороны...',
+          } %}
+        </div>
+      </div>
+    </div>
+    <div class="swiper mySwiper-impressions2 mb-4 d-lg-none">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/riding.png',
+            'alt': 'riding',
+            'label': 'Популярное',
+            'stickerClass': 'popular',
+            'header': 'Урок верховой езды',
+            'subheader': 'Спорт и активити',
+            'descr': 'Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/skateboarding.png',
+            'alt': 'skateboarding',
+            'label': 'Новинка',
+            'stickerClass': 'new',
+            'header': '3 индивидуальных занятия по скейтбордингу',
+            'subheader': 'Спорт и активити',
+            'descr': 'Уроки скейтбординга для детей и взрослых в Тбилиси. Наши тренера имеют большой опыт преподавания и катания...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/gymnastics.png',
+            'alt': 'gymnastics',
+            'header': 'Веселая гимнастика',
+            'subheader': 'Спорт и активити',
+            'descr': 'Семейный центр Jo.Ha.Ku предлагает занятия для дошкольников (3-5 лет) и школьников младшего возраста (6-8) - Веселую гимнастику...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'full',
+            'src': './assets/riding.png',
+            'alt': 'riding',
+            'label': 'Популярное',
+            'stickerClass': 'popular',
+            'header': 'Урок верховой езды',
+            'subheader': 'Спорт и активити',
+            'descr': 'Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...',
+          } %}
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          {% include "../../components/product-card/product-card.twig" with {
+            'class': 'min',
+          } %}
+        </div>
+      </div>
+    </div>
+    <div class="impressions__wrap d-none d-lg-flex">
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/dance.png',
+        'alt': 'dance',
+        'label': 'День святого валентина',
+        'stickerClass': 'valentine',
+        'header': 'Грузинские танцы индивидуальный класс',
+        'subheader': 'Активити',
+        'descr': 'Удивите всех Вашим умением танцевать грузинские танцы и красотой движений, удивите всех...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/spa.png',
+        'alt': 'spa',
+        'label': 'Популярное',
+        'stickerClass': 'popular',
+        'header': 'Массаж для двоих и СПА в серных банях',
+        'subheader': 'Красота и уход',
+        'descr': 'Потрясающее расслабляющее впечатление для Пары!',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/tea.png',
+        'alt': 'tea',
+        'label': 'Новинка',
+        'stickerClass': 'new',
+        'header': 'Чайная церемония',
+        'subheader': 'Гастрономия',
+        'descr': 'Одним из самых изящных искусств является чайная церемония - ритуал совокупность процедур, которые помогают чаю...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/instruments.png',
+        'alt': 'instruments',
+        'header': 'Ударные инструменты и драмтерапия',
+        'subheader': 'Творчество',
+        'descr': '3 часа индивидуальных занятий: вместе с преподавателем вы определите ваш музыкальный уровень, сильные стороны...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/riding.png',
+        'alt': 'riding',
+        'label': 'Популярное',
+        'stickerClass': 'popular',
+        'header': 'Урок верховой езды',
+        'subheader': 'Спорт и активити',
+        'descr': 'Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/skateboarding.png',
+        'alt': 'skateboarding',
+        'label': 'Новинка',
+        'stickerClass': 'new',
+        'header': '3 индивидуальных занятия по скейтбордингу',
+        'subheader': 'Спорт и активити',
+        'descr': 'Уроки скейтбординга для детей и взрослых в Тбилиси. Наши тренера имеют большой опыт преподавания и катания...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/gymnastics.png',
+        'alt': 'gymnastics',
+        'header': 'Веселая гимнастика',
+        'subheader': 'Спорт и активити',
+        'descr': 'Семейный центр Jo.Ha.Ku предлагает занятия для дошкольников (3-5 лет) и школьников младшего возраста (6-8) - Веселую гимнастику...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'full',
+        'src': './assets/riding.png',
+        'alt': 'riding',
+        'label': 'Популярное',
+        'stickerClass': 'popular',
+        'header': 'Урок верховой езды',
+        'subheader': 'Спорт и активити',
+        'descr': 'Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...',
+      } %}
+      {% include "../../components/product-card/product-card.twig" with {
+        'class': 'min',
+      } %}
+    </div>
+    {% include "../../components/button/button.twig" with {
+      'class': 'watch',
+      'label': 'Смотреть все впечатления',
     } %}
   </div>
 </section>

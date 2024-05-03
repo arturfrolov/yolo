@@ -204,6 +204,7 @@
       }
       &_blue {
         background: rgb(34, 161, 202);
+        //width: 295px;
         @include media-breakpoint-up(lg) {
           background: url("./img/gift.svg") center center/cover no-repeat rgba(32, 32, 32, 0.2);
         }
@@ -218,14 +219,24 @@
     &__header {
       font-size: 24px;
       font-weight: 400;
+      @include media-breakpoint-up(xxxl) {
+        font-size: 38px;
+      }
     }
+
     &__subheader {
       font-size: 14px;
       font-weight: 400;
+      @include media-breakpoint-up(xxxl) {
+        font-size: 16px;
+      }
     }
     .swiper {
       width: 160%;
       height: 135px ;
+      .slide-menu__card {
+        width: 295px;
+      }
       @include media-breakpoint-up(sm) {
         width: 100%;
       }

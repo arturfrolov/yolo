@@ -113,7 +113,7 @@
         <span class="slide-menu__header">Афиша</span>
         <span class="slide-menu__subheader">Все события</span>
       </a>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper-header">
   <div class="swiper-wrapper">
     <div class="swiper-slide slide-menu__card slide-menu__card_blue">
       <span>Соберите до 5-ти впечатлений в одном подарке!</span>
@@ -124,20 +124,32 @@
     <div class="swiper-slide slide-menu__card slide-menu__card_yellow">
       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
     </div>
-    <!-- Добавляйте слайды по необходимости -->
+    <div class="swiper-slide slide-menu__card slide-menu__card_yellow">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
   </div>
   <!-- Опционально: пагинация -->
   <div class="swiper-pagination slide-menu__pagination"></div>
-  <div class="swiper-button-prev d-none d-sm-flex"></div>
-  <div class="swiper-button-next d-none d-sm-flex"></div>
+  <div class="swiper-button-prev d-none d-lg-flex"></div>
+  <div class="swiper-button-next d-none d-lg-flex"></div>
 </div>
     </div>
   </div>
 </header>
     <section class='impressions'>
-  <div class='container'>
-    <h1 class="title impressions__title">Наши впечатления</h1>
-    <div class='product-card '>
+  <div class='container' style="overflow: hidden">
+    <div class="impressions__head-wrap">
+      <h1 class="title impressions__title">Наши впечатления</h1>
+      <div class="arrow">
+  <svg class="arrow__icon">
+    <use xlink:href="assets/symbol_sprite.svg#arrow"></use>
+  </svg>
+</div>
+    </div>
+    <div class="swiper mySwiper-impressions1 mb-4 d-lg-none">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
   <div class='product-card__img'>
     <img src='./assets/dance.png' alt='dance'>
     <div class='product-card__img-label valentine'>День святого валентина</div>
@@ -165,7 +177,7 @@
       </div>
       <div class='product-card__counter'>Подарили 456 раз</div>
     </div>
-    <select id="custom-select">
+    <select  class="custom-select">
   <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
   <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
   <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
@@ -183,8 +195,1175 @@
       </a>
     </div>
   </div>
-
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
 </div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/spa.png' alt='spa'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Красота и уход    </h6>
+    <h3 class='product-card__header'>
+      Массаж для двоих и СПА в серных банях    </h3>
+    <p class='product-card__descr'>
+      Потрясающее расслабляющее впечатление для Пары!    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/tea.png' alt='tea'>
+    <div class='product-card__img-label new'>Новинка</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Гастрономия    </h6>
+    <h3 class='product-card__header'>
+      Чайная церемония    </h3>
+    <p class='product-card__descr'>
+      Одним из самых изящных искусств является чайная церемония - ритуал совокупность процедур, которые помогают чаю...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/instruments.png' alt='instruments'>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Творчество    </h6>
+    <h3 class='product-card__header'>
+      Ударные инструменты и драмтерапия    </h3>
+    <p class='product-card__descr'>
+      3 часа индивидуальных занятий: вместе с преподавателем вы определите ваш музыкальный уровень, сильные стороны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper mySwiper-impressions2 mb-4 d-lg-none">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/riding.png' alt='riding'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Урок верховой езды    </h3>
+    <p class='product-card__descr'>
+      Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/skateboarding.png' alt='skateboarding'>
+    <div class='product-card__img-label new'>Новинка</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      3 индивидуальных занятия по скейтбордингу    </h3>
+    <p class='product-card__descr'>
+      Уроки скейтбординга для детей и взрослых в Тбилиси. Наши тренера имеют большой опыт преподавания и катания...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/gymnastics.png' alt='gymnastics'>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Веселая гимнастика    </h3>
+    <p class='product-card__descr'>
+      Семейный центр Jo.Ha.Ku предлагает занятия для дошкольников (3-5 лет) и школьников младшего возраста (6-8) - Веселую гимнастику...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/riding.png' alt='riding'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Урок верховой езды    </h3>
+    <p class='product-card__descr'>
+      Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+        <div class="swiper-slide slide-menu__card slide-menu__impressions">
+          <div class='product-card min'>
+  <div class='product-card__img'>
+    <img src='' alt=''>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+          </h6>
+    <h3 class='product-card__header'>
+          </h3>
+    <p class='product-card__descr'>
+          </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="impressions__wrap d-none d-lg-flex">
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/dance.png' alt='dance'>
+    <div class='product-card__img-label valentine'>День святого валентина</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Активити    </h6>
+    <h3 class='product-card__header'>
+      Грузинские танцы индивидуальный класс    </h3>
+    <p class='product-card__descr'>
+      Удивите всех Вашим умением танцевать грузинские танцы и красотой движений, удивите всех...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/spa.png' alt='spa'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Красота и уход    </h6>
+    <h3 class='product-card__header'>
+      Массаж для двоих и СПА в серных банях    </h3>
+    <p class='product-card__descr'>
+      Потрясающее расслабляющее впечатление для Пары!    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/tea.png' alt='tea'>
+    <div class='product-card__img-label new'>Новинка</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Гастрономия    </h6>
+    <h3 class='product-card__header'>
+      Чайная церемония    </h3>
+    <p class='product-card__descr'>
+      Одним из самых изящных искусств является чайная церемония - ритуал совокупность процедур, которые помогают чаю...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/instruments.png' alt='instruments'>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Творчество    </h6>
+    <h3 class='product-card__header'>
+      Ударные инструменты и драмтерапия    </h3>
+    <p class='product-card__descr'>
+      3 часа индивидуальных занятий: вместе с преподавателем вы определите ваш музыкальный уровень, сильные стороны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/riding.png' alt='riding'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Урок верховой езды    </h3>
+    <p class='product-card__descr'>
+      Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/skateboarding.png' alt='skateboarding'>
+    <div class='product-card__img-label new'>Новинка</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      3 индивидуальных занятия по скейтбордингу    </h3>
+    <p class='product-card__descr'>
+      Уроки скейтбординга для детей и взрослых в Тбилиси. Наши тренера имеют большой опыт преподавания и катания...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/gymnastics.png' alt='gymnastics'>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Веселая гимнастика    </h3>
+    <p class='product-card__descr'>
+      Семейный центр Jo.Ha.Ku предлагает занятия для дошкольников (3-5 лет) и школьников младшего возраста (6-8) - Веселую гимнастику...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card full'>
+  <div class='product-card__img'>
+    <img src='./assets/riding.png' alt='riding'>
+    <div class='product-card__img-label popular'>Популярное</div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+      Спорт и активити    </h6>
+    <h3 class='product-card__header'>
+      Урок верховой езды    </h3>
+    <p class='product-card__descr'>
+      Катание на лошадях - один из самых приятных вариантов отдыха на природе. Общение с красивыми статными животны...    </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+      <div class='product-card min'>
+  <div class='product-card__img'>
+    <img src='' alt=''>
+    <div class='product-card__img-label '></div>
+    <div class="product-card__img-like">
+      <svg class="product-card__img-like-icon">
+        <use xlink:href="assets/symbol_sprite.svg#like"></use>
+      </svg>
+    </div>
+  </div>
+  <div class='product-card__wrap'>
+    <h6 class='product-card__subheader'>
+          </h6>
+    <h3 class='product-card__header'>
+          </h3>
+    <p class='product-card__descr'>
+          </p>
+    <div class="product-card__info">
+      <div class='product-card__feedback'>
+        <span class="product-card__feedback-num">123 отзыва</span>
+        <div class="product-card__feedback-stars">
+          <svg class="product-card__feedback-stars-icon">
+            <use xlink:href="assets/symbol_sprite.svg#stars"></use>
+          </svg>
+        </div>
+      </div>
+      <div class='product-card__counter'>Подарили 456 раз</div>
+    </div>
+    <select  class="custom-select">
+  <option value="100|1|55">100 ₾ | 1 чел. | 55 мин.</option>
+  <option value="180|2|55">180 ₾ | 2 чел. | 55 мин.</option>
+  <option value="250|3|55">250 ₾ | 3 чел. | 55 мин.</option>
+  <option value="300|4|55">300 ₾ | 4 чел. | 55 мин.</option>
+</select>
+    <div class="product-card__wrapper-btn">
+      <a class="btn gift" href="#">
+  Мультиподарок</a>
+      <a class="btn buy" href="#">
+  Купить</a>
+      <a class="btn product-card__wrapper-cart" href="#">
+        <svg class="product-card__wrapper-cart-icon">
+          <use xlink:href="assets/symbol_sprite.svg#cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="product-card__mini">
+    <div class="product-card__mini-header">
+      Скидки до 50% на все впечатления
+      для детей!
+    </div>
+    <div class="product-card__mini-descr">
+      Подарите ребенку
+      незабываемые впечатления.
+    </div>
+    <a class="btn more" href="#">
+  Подробнее</a>
+  </div>
+</div>
+    </div>
+    <a class="btn watch" href="#">
+  Смотреть все впечатления</a>
+  </div>
+</section>
+    <section class='choose'>
+  <div class='container'>
+    <div class="choose__wrap">
+      <h3 class="choose__header">Не знаете что выбрать?</h3>
+      <h6 class="choose__subheader">Оставьте ваши контактные данные и мы вам поможем!</h6>
+      <form class="choose__form">
+        <input type="text" class="choose__form-input" placeholder="Имя">
+        <input type="tel" class="choose__form-input" placeholder="Телефон">
+        <button type="submit" class="choose__form-submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+    <section class='reviews'>
+  <div class='container' style="overflow: hidden">
+    <div class="reviews__head-wrap">
+      <h2 class='reviews__header'>Отзывы нащих клиентов</h2>
+      <div class="arrow">
+  <svg class="arrow__icon">
+    <use xlink:href="assets/symbol_sprite.svg#arrow"></use>
+  </svg>
+</div>
+    </div>
+    <div class="swiper mySwiper-reviews">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-menu__reviews">
+          <div class="reviews__item">
+            <div class="reviews__item-header">Грузинские танцы индивидуальный класс</div>
+            <div class="reviews__item-rating">
+              <div class="reviews__item-name">Игорь</div>
+              <div class="reviews__item-stars">
+                <svg class="reviews__item-stars-icon">
+                  <use xlink:href="assets/symbol_sprite.svg#rev-stars"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="reviews__item-descr">
+              Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — блоки с...
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-menu__reviews">
+          <div class="reviews__item">
+            <div class="reviews__item-header">Массаж для двоих и СПА в серных банях</div>
+            <div class="reviews__item-rating">
+              <div class="reviews__item-name">Игорь</div>
+              <div class="reviews__item-stars">
+                <svg class="reviews__item-stars-icon">
+                  <use xlink:href="assets/symbol_sprite.svg#rev-stars"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="reviews__item-descr">
+              Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-menu__reviews">
+          <div class="reviews__item">
+            <div class="reviews__item-header">Грузинские танцы индивидуальный класс</div>
+            <div class="reviews__item-rating">
+              <div class="reviews__item-name">Игорь</div>
+              <div class="reviews__item-stars">
+                <svg class="reviews__item-stars-icon">
+                  <use xlink:href="assets/symbol_sprite.svg#rev-stars"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="reviews__item-descr">
+              Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — блоки с...
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-menu__reviews">
+          <div class="reviews__item">
+            <div class="reviews__item-header">Чайная церемония</div>
+            <div class="reviews__item-rating">
+              <div class="reviews__item-name">Игорь</div>
+              <div class="reviews__item-stars">
+                <svg class="reviews__item-stars-icon">
+                  <use xlink:href="assets/symbol_sprite.svg#rev-stars"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="reviews__item-descr">
+              Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — блоки с...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev d-none d-lg-flex"></div>
+      <div class="swiper-button-next d-none d-lg-flex"></div>
+    </div>
+  </div>
+</section>
+    <section class='faq'>
+  <div class='container'>
+    <h2 class="faq__header">FAQ</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Как активировать сертификат?</button>
+        <div class="faq-answer">
+          <p>Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — это плохо и настоящий контент лучше, но мы не видим в «рыбе» ничего плохого. Главное не забыть «почистить» ее, иначе это плохо скажется на продвижении сайта.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Какая длительность - Мастер-класс артдинга в Тбилиси?</button>
+        <div class="faq-answer">
+          <p>Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — это плохо и настоящий контент лучше, но мы не видим в «рыбе» ничего плохого. Главное не забыть «почистить» ее, иначе это плохо скажется на продвижении сайта.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Сколько действует сертификат?</button>
+        <div class="faq-answer">
+          <p>Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — это плохо и настоящий контент лучше, но мы не видим в «рыбе» ничего плохого. Главное не забыть «почистить» ее, иначе это плохо скажется на продвижении сайта.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Как воспользоваться остатком на балансе после использования мультиподарка?</button>
+        <div class="faq-answer">
+          <p>Бессмысленный текст-заполнитель, который вставляется в макет страницы при тестировании или для того, чтобы показать заказчику как будут смотреться блоки с текстом. Его придумали как замену реального текста. Бытует мнение, что рыбный текст — это плохо и настоящий контент лучше, но мы не видим в «рыбе» ничего плохого. Главное не забыть «почистить» ее, иначе это плохо скажется на продвижении сайта.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 </body>

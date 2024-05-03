@@ -1,8 +1,77 @@
 .impressions {
   padding-top: 30px;
+  @include media-breakpoint-up(xxxl) {
+    padding-top: 60px;
+  }
+  &__head-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(xxxl) {
+      margin-bottom: 50px;
+    }
+  }
   &__title {
     font-size: 28px;
     margin-bottom: 0;
-    padding-bottom: 24px;
+    padding: 0 20px 0 0;
+    @include media-breakpoint-up(lg) {
+      font-size: 35px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      font-size: 50px;
+    }
+  }
+  & .watch {
+    display: flex;
+    justify-content: center;
+    border: 1px solid map-get($theme-colors, "primary");
+    border-radius: 27px;
+    background-color: var(--white-text);
+    font-size: 14px;
+    color: map-get($theme-colors, "primary");
+    @include media-breakpoint-up(lg) {
+      width: 340px;
+      margin: 0 auto;
+      &:hover {
+        background-color: map-get($theme-colors, "primary");
+        color: var(--white-text);
+      }
+    }
+  }
+  .swiper {
+    width: 160%;
+    overflow: visible;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+    .slide-menu__impressions {
+      width: 315px;
+      @include media-breakpoint-up(sm) {
+        width: 315px;
+      }
+    }
+  }
+  &__wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 60px;
+    }
+    .product-card {
+      width: 305px;
+      @include media-breakpoint-up(xl) {
+        width: 350px;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 400px;
+      }
+      @include media-breakpoint-up(xxxl) {
+        width: 596px;
+        height: 760px;
+      }
+    }
   }
 }

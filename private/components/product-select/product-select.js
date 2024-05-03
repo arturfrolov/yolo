@@ -3,9 +3,10 @@ import 'select2';
 import '../../_helpers/js/dropdownPosition/select2-dropdownPosition';
 
 function select() {
-  $('#custom-select').select2({
+  $('.custom-select').select2({
     theme: 'classic',
-    width: '281px',
+    // width: '281px',
+    width: '100%',
     minimumResultsForSearch: -1,
     dropdownPosition: 'below',
     // eslint-disable-next-line
@@ -16,6 +17,7 @@ function select() {
       const parts = data.text.split('|');
       // eslint-disable-next-line
       return $('<span class="data-section">' + parts[0] +
+        // eslint-disable-next-line
         '</span><span class="divider"></span><span class="data-section">' + parts[1] + '</span><span class="divider"></span><span class="data-section">' + parts[2] + '</span>');
     },
     // eslint-disable-next-line
@@ -26,4 +28,5 @@ function select() {
     },
   });
 }
+
 export default select;

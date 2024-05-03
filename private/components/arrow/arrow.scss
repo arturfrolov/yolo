@@ -1,0 +1,12 @@
+.arrow {
+  width: 20px;
+  height: 25px;
+  &__icon {
+    width: 80%;
+    height: 100%;
+    stroke: var(--black-text);
+    @include media-breakpoint-up(xxxl) {
+      width: 100%;
+    }
+  }
+}

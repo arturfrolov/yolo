@@ -1,5 +1,8 @@
 .select2-container--classic {
   margin-bottom: 12px;
+  @include media-breakpoint-up(xxxl) {
+    margin-bottom: 25px;
+  }
   .select2-selection--single {
     display: flex;
     align-items: center;
@@ -26,11 +29,24 @@
     .select2-selection__rendered {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       color: #444;
       padding-left: 22px;
       //padding-right: 30px;
       .divider {
-        margin: 0 15px;
+        margin: 0 20px;
+        @include media-breakpoint-up(lg) {
+          margin: 0 15px;
+        }
+        @include media-breakpoint-up(xl) {
+          margin: 0 18px;
+        }
+        @include media-breakpoint-up(xxl) {
+          margin: 0 30px;
+        }
+        @include media-breakpoint-up(xxl) {
+          margin: 0 64px;
+        }
       }
     }
 
@@ -82,5 +98,14 @@
 .data-section {
   flex-grow: 1;
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  @include media-breakpoint-up(lg) {
+    font-size: 15px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
 }
 

@@ -1,98 +1,77 @@
-.read-more {
-  background-color: map-get($theme-colors, primary);
-  color: var(--blue-text);
-  line-height: 110%;
-  padding: 130px 0 58px 0;
-  @include media-breakpoint-down(sm) {
-    padding: 70px 0 46px 0;
+.faq {
+  padding-top: 32px;
+  @include media-breakpoint-up(xxxl) {
+    padding-top: 60px;
   }
-  @include media-breakpoint-between(sm, lg) {
-    padding: 92px 0 46px 0;
-  }
-  &__title {
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 45px;
-    @include media-breakpoint-down(sm) {
+  &__header {
+    color: var(--color-white);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(xl) {
       font-size: 35px;
+      margin-bottom: 35px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      font-size: 50px;
+      margin-bottom: 50px;
     }
   }
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 44px;
-    row-gap: 35px;
-    @include media-breakpoint-down(sm) {
-      margin-top: 23px;
-      row-gap: 27px;
-    }
-  }
-  &__btns {
+  .faq-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 36px;
-    @include media-breakpoint-down(sm) {
-      margin-top: 49px;
-    }
-    @include media-breakpoint-between(sm, lg) {
-      margin-top: 32px;
-    }
-    &-articles {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 355px;
-      height: 80px;
-      border: 2px solid var(--green-text);
-      color: var(--blue-text);
-      font-size: 16px;
-      font-weight: 500;
-      position: relative;
-      overflow: hidden;
-      transition: 0.5s ease-in-out;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -50px;
-        bottom: 0;
-        left: 0;
-        border-right: 50px solid transparent;
-        border-bottom: 80px solid var(--green-text);
-        transform: translateX(-100%);
-        transition: 0.5s ease-in-out;
-      }
-      &:hover {
-        z-index: 0;
-        color: white;
-        &:before {
-          transform: translateX(0);
-          z-index: -1;
+    gap: 16px;
+    .faq-item {
+      .faq-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        padding: 18px 25px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: rgb(244, 236, 224);
+        text-align: left;
+        line-height: 1;
+        color: var(--black-text);
+        @include media-breakpoint-up(xxxl) {
+          font-size: 16px;
+        }
+        &:after {
+          content: '+';
+          float: right;
+          font-size: 24px;
+        }
+
+        &.active {
+          color: var(--white-text);
+          background: rgb(253, 81, 55);
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        &.active:after {
+          content: '-';
         }
       }
-      @include media-breakpoint-down(sm) {
-        width: 290px;
-        height: 56px;
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+        @include media-breakpoint-up(xxxl) {
+          font-size: 16px;
+        }
+        p {
+          margin: 15px 0;
+        }
       }
-      @include media-breakpoint-between(lg, xl) {
-        width: 300px;
-      }
-    }
-    &-pageup {
-      display: flex;
-      justify-content: center;
-      margin-top: 57px;
-      @include media-breakpoint-down(sm) {
-        margin-top: 34px;
-      }
-      @include media-breakpoint-between(sm, lg) {
-        margin-top: 38px;
-      }
-    }
-    &-text {
-      color: #0833C5;
     }
   }
 }
