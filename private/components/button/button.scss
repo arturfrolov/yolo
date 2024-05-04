@@ -53,6 +53,10 @@
     @include media-breakpoint-up(xxl) {
       display: block;
     }
+    &.active {
+      background-color: rgb(237, 76, 52);
+      color: var(--white-text);
+    }
     &:hover {
       color: var(--white-text);
       background: map-get($theme-colors, primary);

@@ -190,6 +190,14 @@
 
           width: 50%;
         }
+        &.active {
+          background: rgb(20, 102, 83);
+          color: var(--white-text);
+          &:after {
+            content: "-";
+            color: var(--white-text);
+          }
+        }
         &:after {
           content: "+";
           position: absolute;
@@ -225,6 +233,9 @@
         }
         @include media-breakpoint-up(xl) {
           width: 45%;
+        }
+        &.active {
+          background: rgb(237, 76, 52);
         }
       }
     }
